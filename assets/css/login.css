@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(/assets/images/login_bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* logo */
+.logoPic {
+  margin-top: 20px;
+}
+
+/* 注册  登录 */
+.login {
+  position: absolute;
+  width: 400px;
+  height: 310px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-form {
+  height: 60px;
+  background: url(/assets/images/login_title.png) no-repeat center;
+}
+
+.layui-form {
+  padding: 0 30px;
+}
+
+.goto {
+  margin-top: 5px;
+}
+.fr {
+  float: right;
+}
+
+/* 字体图标 */
+.layui-form-item {
+  position: relative;
+}
+.layui-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.layui-form-item input {
+  padding-left: 30px;
+}
+/* input::placeholder {
+  padding-left: 30px;
+} */
+
+/* 注册表单 */
+.reg-form {
+  display: none;
+}
