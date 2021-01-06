@@ -7,19 +7,19 @@ $.ajax({
     //     Authorization: localStorage.getItem("token")
     // },
     success: function (res) {
-        console.log(res);
+        // console.log(res);
         if(res.status !== 0 && res.message ==="身份认证失败！"){
             location.href = "/home/login.html"
             return console.log("你出错了");
         }
-        console.log(res);
+        // console.log(res);
         let username = res.data.username;
         let nickname = res.data.nickname;
         let portraitSrc= res.data.user_pic;
         let showname =  nickname||username;
 
         $("#welcomeUser").text("欢迎:"+showname)
-        console.log($("#welcomeUser").text());
+        // console.log($("#welcomeUser").text());
 
         if(portraitSrc){
             $(".text-portrait").hide();
@@ -35,6 +35,7 @@ $.ajax({
 }
 
 getNameAndPortrait();
+
 
 // 退出
 let layer = layui.layer;

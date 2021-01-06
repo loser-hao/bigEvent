@@ -34,8 +34,8 @@
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">
+                    <li class="layui-nav-item welcome">
+                        <a href="javascript:;" class="">
                             <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
                             <span class="text-portrait">D</span> <span id="welcomeUser"></span> </a>
                     </li>
@@ -52,9 +52,12 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="" target="iframe"><i class="layui-icon layui-icon-app"></i> 基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i> 更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i> 重置密码</a></dd>
+                            <dd><a href="/user/userInfo.html" target="iframe"><i class="layui-icon layui-icon-app"></i>
+                                    基本资料</a></dd>
+                            <dd><a href="/user/userAvatar.html" target="iframe"><i
+                                        class="layui-icon layui-icon-app"></i> 更换头像</a></dd>
+                            <dd><a href="/user/userPwd.html" target="iframe"><i class="layui-icon layui-icon-app"></i>
+                                    重置密码</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -63,7 +66,8 @@
         <div class="layui-body">
             <!-- 内容主体区域 -->
             <!-- <div style="padding: 15px;">内容主体区域</div> -->
-            <iframe src="/home/dashboard.html" name="iframe" frameborder="0"></iframe>
+            <!-- <iframe src="/home/dashboard.html" name="iframe" frameborder="0"></iframe> -->
+            <iframe src="/user/userAvatar.html" name="iframe" frameborder="0"></iframe>
         </div>
         <div class="layui-footer">
             <!-- 底部固定区域 --> © LoserHao -最终解释权归桔子所有 </div>
