@@ -11,10 +11,18 @@ $("#user-pwd-form").submit(function (e) {
         url: "/my/updatepwd",
         success: function (res) {
             console.log(res);
-            if(res.status !== 0){
+            if(res.status === 0){
                 layui.layer.msg(res.message)
+                console.log( $("#user-pwd-form")[0]);
+                console.dir( $("#user-pwd-form")[0]);
+                $('#user-pwd-form')[0].reset();
+                
             }else{
                 layui.layer.msg(res.message)
+                // console.log($("#iiii"));
+                // $("#iiii").click();
+
+              
             }
             
         }

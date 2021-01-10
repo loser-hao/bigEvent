@@ -1,6 +1,6 @@
 // 获取头像和昵称
 function getNameAndPortrait(){
-console.log(localStorage.getItem("token"));
+// console.log(localStorage.getItem("token"));
 $.ajax({
     url: "/my/userinfo",
     // headers: {

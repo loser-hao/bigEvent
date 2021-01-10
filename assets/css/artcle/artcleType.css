@@ -1,0 +1,16 @@
+.art-table {
+  margin: 15px;
+}
+.act-title {
+  /* line-height: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .fr {
+  float: right;
+} */
+
+#type-form {
+  padding: 20px 20px 20px 0;
+}

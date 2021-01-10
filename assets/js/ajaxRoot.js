@@ -1,4 +1,4 @@
-// url的优化
+// ajxa的全局配置
 $.ajaxPrefilter(function (params) {
     params.url = "http://api-breakingnews-web.itheima.net" + params.url;
 
@@ -18,7 +18,7 @@ $.ajaxPrefilter(function (params) {
       // 回到登录页面重新登录
       // 把token也清除掉
       localStorage.removeItem("token");
-      location.href = "login.html";
+      location.href = "/home/login.html";
     }
   };
    

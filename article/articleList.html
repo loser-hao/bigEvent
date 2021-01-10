@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" />
+  <link rel="stylesheet" href="/assets/css/artcle/artcleList.css" />
+</head>
+
+<body>
+  <div class="layui-card">
+    <div class="layui-card-header act-title"> 文章列表 </div>
+    <div class="layui-card-body">
+      <form class="layui-form login-form" action="" lay-filter="filter">
+        <div class=" layui-form-item layui-input-inline">
+          <div class=" layui-input-inline ">
+            <select name="type" id="type">
+              <option value="">所有分类</option>
+            </select>
+          </div>
+          <div class=" layui-input-inline">
+            <select name="status">
+              <option value="">所有状态</option>
+              <option value="已发布">已发布</option>
+              <option value="草稿">草稿</option>
+            </select>
+          </div>
+          <button class="layui-btn" id="chooseType" lay-submit lay-filter="formDemo">筛选</button>
+        </div>
+        <div class="layui-form-item">
+        </div>
+      </form>
+      <table class="layui-table art-table">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+          <col />
+          <col width="115" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>文章标题</th>
+            <th>分类</th>
+            <th>发表时间</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="page"></div>
+    </div>
+  </div>
+  <script src="/assets/lib/layui/layui.all.js"></script>
+  <script src="/assets/lib/jquery.js"></script>
+  <script src="/assets/lib/template-web.js"></script>
+  <script src="/assets/js/ajaxRoot.js"></script>
+  <script src="/assets/js/artcle/artcleList.js"></script>
+  <!-- 模板引擎 -->
+  <script type="text/html" id="act-list">
+      {{each data v i }}
+      <tr>
+        <td>{{v.title}}</td>
+        <td>{{v.cate_name}}</td>
+        <td>{{v.pub_date}}</td>
+        <td>{{v.state}}</td>
+        <td>
+          <button
+            type="button"
+            class="layui-btn  layui-btn layui-btn-xs"
+            ownId="{{v.Id}}"
+            id="update"
+          >
+            编辑
+          </button>
+          <button
+            type="button"
+            class="layui-btn layui-btn-danger layui-btn layui-btn-xs"
+            ownId="{{v.Id}}"
+            id="del"
+          >
+            删除
+          </button>
+        </td>
+      </tr>
+      {{/each}}
+    </script>
+</body>
+
+</html>

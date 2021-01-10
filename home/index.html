@@ -22,9 +22,9 @@
                         <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
                         <span class="text-portrait">D</span> 个人中心 </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">更换密码</a></dd>
+                        <dd><a href="/user/userInfo.html" target="iframe">基本资料</a></dd>
+                        <dd><a href="/user/userAvatar.html" target="iframe">更换头像</a></dd>
+                        <dd><a href="/user/userPwd.html" target="iframe">更换密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item"><a href="" id="exitBtn"><span class="iconfont icon-tuichu"></span>退出</a></li>
@@ -44,9 +44,13 @@
                     <li class="layui-nav-item ">
                         <a class="" href="javascript:;"> <span class="iconfont icon-16"></span>文章管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i> 文章类别</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i> 文章类别</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i> 发布文章</a></dd>
+                            <dd><a href="/article/articleType.html" target="iframe"><i
+                                        class="layui-icon layui-icon-app"></i> 文章类别</a>
+                            </dd>
+                            <dd><a href="/article/articleList.html" target="iframe"><i
+                                        class="layui-icon layui-icon-app"></i> 文章类别</a></dd>
+                            <dd><a href="/article/articleRelease.html" target="iframe"><i
+                                        class="layui-icon layui-icon-app"></i> 发布文章</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item">
@@ -66,8 +70,7 @@
         <div class="layui-body">
             <!-- 内容主体区域 -->
             <!-- <div style="padding: 15px;">内容主体区域</div> -->
-            <!-- <iframe src="/home/dashboard.html" name="iframe" frameborder="0"></iframe> -->
-            <iframe src="/user/userAvatar.html" name="iframe" frameborder="0"></iframe>
+            <iframe src="/home/dashboard.html" name="iframe" frameborder="0"></iframe>
         </div>
         <div class="layui-footer">
             <!-- 底部固定区域 --> © LoserHao -最终解释权归桔子所有 </div>
