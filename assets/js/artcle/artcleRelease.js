@@ -28,6 +28,7 @@ $(function () {
   let checkId = location.href.indexOf("?id=");
   if (checkId !== -1) {
     $("#pub").text("更新");
+    $("#title").text("修改文章");
     let id = location.href.slice(checkId + 4);
     // console.log(id);
     $.ajax({
